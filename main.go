@@ -1,10 +1,9 @@
 package main
 
 import (
-	"fmt"
 	"github.com/gorilla/mux"
-	"github.com/james-work-account/simple-api/controllers/api.cars"
-	"github.com/james-work-account/simple-api/controllers/api.cars.id"
+	"github.com/james-work-account/go-rest-api/controllers/api.cars"
+	"github.com/james-work-account/go-rest-api/controllers/api.cars.id"
 	"log"
 	"net/http"
 )
@@ -18,6 +17,6 @@ func main() {
 	r.HandleFunc("/api/cars/{id}", api_cars_id.Generic).Methods("PUT")
 	r.HandleFunc("/api/cars/{id}", api_cars_id.Generic).Methods("DELETE")
 
-	fmt.Println("Server running on port 8000")
+	log.Println("Server running on port 8000")
 	log.Fatal(http.ListenAndServe(":8000", r))
 }

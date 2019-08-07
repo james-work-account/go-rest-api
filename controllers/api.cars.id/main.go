@@ -4,9 +4,9 @@ import (
 	"encoding/json"
 	"github.com/google/uuid"
 	"github.com/gorilla/mux"
-	"github.com/james-work-account/simple-api/models"
-	. "github.com/james-work-account/simple-api/utils/constants"
-	"github.com/james-work-account/simple-api/utils/db"
+	"github.com/james-work-account/go-rest-api/models"
+	. "github.com/james-work-account/go-rest-api/utils/constants"
+	"github.com/james-work-account/go-rest-api/utils/db"
 	"log"
 	"net/http"
 )
